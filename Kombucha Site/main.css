@@ -1,0 +1,84 @@
+:root {
+   --accent-color: #800000;
+   --font-color: #595959;
+   --bg-color: #F5FFFA;
+}
+
+body {
+   background-color: var(--bg-color);
+   font-family: Helvetica, sans-serif;
+   color: var(--font-color);
+}
+
+
+
+a:link {
+   color: var(--font-color); 
+}   
+
+a:visited {
+   color: var(--font-color);  
+}   
+
+a:hover {
+   color: var(--accent-color); 
+}  
+
+a:active {
+   color: var(--accent-color);
+}   
+
+header {
+   background-color: white;
+   padding: 5px 0;
+   margin: 0;
+}
+
+header h1 {
+   color: var(--accent-color);
+   font-size: 3rem;
+   margin: 10px 10px;
+   text-shadow: 2px 2px 3px gray;
+   text-align: center;
+   background-color: yellow;
+   animation-name: changeColors;
+   animation-duration: 4s;
+   animation-delay: 1s;
+}
+@keyframes changeColors{
+	from {background-color: yellow;}
+	to {background-color: #4169E1;}
+}
+
+p {
+	text-align: left;
+	text-size: 16px;
+}
+
+h2 {
+	margin:5px 5px;
+	text-shadow: 2px 2px 3px black;
+	text-align: left;
+	color: #DC143C;
+}
+
+nav p a{
+   text-decoration: none;  
+   padding: 10px 20px;
+}
+
+nav p a:hover{
+   color: white;
+   background-color: var(--accent-color);    
+}
+
+
+table a :visited{
+   color: red;
+}   
+
+table a:hover{
+   color: purple;
+}  
+
+
